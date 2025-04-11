@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZONE 2 : Analyse via Téléphone</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #111; /* Fond noir pour un look cyber */
+            color: #00FF00; /* Texte vert fluo */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+            border: 1px solid #00FF00;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #00FF00;
+        }
+        h1, h2 {
+            color: #00FFFF; /* Cyan pour les titres */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .epreuve {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px dashed #00FF00;
+            border-radius: 5px;
+        }
+        h3 {
+            color: #00FF00;
+            margin-top: 0;
+        }
+        .audio-player {
+            margin-top: 10px;
+        }
+        .info-list {
+            margin-top: 10px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .info-list li {
+            margin-bottom: 8px;
+        }
+        /* Effets de style cyber (facultatif) */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 255, 0, 0.1), rgba(0, 0, 0, 0.7));
+            z-index: -1;
+            pointer-events: none;
+        }
+        .glitch {
+            position: relative;
+            display: inline-block;
+        }
+        .glitch::before,
+        .glitch::after {
+            content: attr(data-glitch);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            animation: glitch-anim 2s infinite linear alternate-reverse;
+        }
+        .glitch::before {
+            text-shadow: -2px 0 blue;
+            left: 2px;
+        }
+        .glitch::after {
+            text-shadow: 2px 0 red;
+            left: -2px;
+        }
+        @keyframes glitch-anim {
+            0% {
+                clip: rect(26px, 9999px, 7px, 0);
+                transform: translate(-5px, -10px);
+            }
+            10% {
+                clip: rect(12px, 9999px, 82px, 0);
+                transform: translate(7px, 0px);
+            }
+            20% {
+                clip: rect(69px, 9999px, 44px, 0);
+                transform: translate(-2px, 5px);
+            }
+            30% {
+                clip: rect(40px, 9999px, 73px, 0);
+                transform: translate(0px, -3px);
+            }
+            40% {
+                clip: rect(95px, 9999px, 92px, 0);
+                transform: translate(4px, 8px);
+            }
+            50% {
+                clip: rect(9px, 9999px, 56px, 0);
+                transform: translate(-8px, -2px);
+            }
+            60% {
+                clip: rect(86px, 9999px, 39px, 0);
+                transform: translate(3px, 1px);
+            }
+            70% {
+                clip: rect(41px, 9999px, 63px, 0);
+                transform: translate(-1px, 7px);
+            }
+            80% {
+                clip: rect(16px, 9999px, 28px, 0);
+                transform: translate(6px, -5px);
+            }
+            90% {
+                clip: rect(78px, 9999px, 15px, 0);
+                transform: translate(-4px, 2px);
+            }
+            100% {
+                clip: rect(32px, 9999px, 89px, 0);
+                transform: translate(2px, -7px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glitch" data-glitch="ZONE 2 : Analyse">ZONE 2 : Analyse</h1>
+        <h2 class="glitch" data-glitch="via Téléphone">via Téléphone</h2>
+
+        <div class="epreuve">
+            <h3>Épreuve 1 : Témoignages audio</h3>
+            <p>Écoutez attentivement les trois extraits audio récupérés. Un seul contient des informations cohérentes avec la situation.</p>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="audios\audio1.mp3" type="audio/mpeg">
+                    Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+                <p class="instruction">Extrait audio 1</p>
+            </div>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="audios\audio2.mp3" type="audio/mpeg">
+                    Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+                <p class="instruction">Extrait audio 2</p>
+            </div>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="audios\audio3.mp3" type="audio/mpeg">
+                    Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+                <p class="instruction">Extrait audio 3</p>
+            </div>
+            <p class="instruction">Repérez les incohérences pour identifier le témoignage fiable.</p>
+        </div>
+
+        <div class="epreuve">
+            <h3>Épreuve 2 : Informations numériques</h3>
+            <p>Analysez les informations suivantes. Parmi elles, trois éléments sont cruciaux pour la suite de votre enquête.</p>
+            <ul class="info-list">
+                <li>Le fichier ZETA-9 est infecté</li>
+                <li>Clé SHA256 : 7FA3B...</li>
+                <li>Contact : info@universite42.com</li>
+                <li>Code : 124-57-892</li>
+                <li>Note interne : 'Manger plus de bananes'</li>
+                <li>ID Fichier : NOVA-7</li>
+            </ul>
+            <p class="instruction">Identifiez les trois données pertinentes.</p>
+        </div>
+    </div>
+</body>
+</html>
